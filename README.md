@@ -3,7 +3,7 @@
 ACAMS is a full-stack web application for managing animals, users, and adoption requests in a shelter environment. It supports separate roles for **Adopters** and **Staff**, with role-based access control across the system.
 
 ## Project Structure
-
+```
 .
 ├── README.md  
 ├── backend  
@@ -44,7 +44,7 @@ ACAMS is a full-stack web application for managing animals, users, and adoption 
         └── types  
             ├── auth.ts  
             └── api.ts  
-
+```
 ## Tech Stack
 
 ### Frontend
