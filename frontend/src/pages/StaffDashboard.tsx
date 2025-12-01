@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
-import type { AdoptionRequest, AdoptionRequestStatus, AppUser, Animal } from '../types/api';
+import type { AdoptionRequest, AdoptionRequestStatus, AppUser, Animal, MedicalRecord, IntakeRecord } from '../types/api';
 
 type TabType = 'requests' | 'users' | 'animals';
+type AnimalsViewMode = 'list' | 'medical' | 'intake';
 
 const StaffDashboard = () => {
     const { currentUser } = useAuth();
@@ -32,6 +33,21 @@ const StaffDashboard = () => {
     const [animalSpeciesFilter, setAnimalSpeciesFilter] = useState('');
     const [animalStatusFilter, setAnimalStatusFilter] = useState('');
     const [animalNameFilter, setAnimalNameFilter] = useState('');
+    const [animalsViewMode, setAnimalsViewMode] = useState<AnimalsViewMode>('list');
+
+    // Medical records state
+    const [selectedAnimalId, setSelectedAnimalId] = useState<number | null>(null);
+    const [selectedAnimalName, setSelectedAnimalName] = useState<string | null>(null);
+    const [medicalRecords, setMedicalRecords] = useState<MedicalRecord[]>([]);
+    const [isLoadingMedical, setIsLoadingMedical] = useState(false);
+    const [medicalError, setMedicalError] = useState<string | null>(null);
+    const [medicalFilter, setMedicalFilter] = useState('');
+
+    // Intake records state
+    const [intakeRecords, setIntakeRecords] = useState<IntakeRecord[]>([]);
+    const [isLoadingIntake, setIsLoadingIntake] = useState(false);
+    const [intakeError, setIntakeError] = useState<string | null>(null);
+    const [intakeFilter, setIntakeFilter] = useState('');
 
     // Fetch all adoption requests
     const fetchRequests = async () => {
@@ -98,6 +114,54 @@ const StaffDashboard = () => {
             setAnimalsError(err instanceof Error ? err.message : 'An error occurred');
         } finally {
             setIsLoadingAnimals(false);
+        }
+    };
+
+    // Fetch medical records for a specific animal
+    const fetchMedicalRecords = async (animalId: number, animalName: string) => {
+        setIsLoadingMedical(true);
+        setMedicalError(null);
+        setSelectedAnimalId(animalId);
+        setSelectedAnimalName(animalName);
+        setAnimalsViewMode('medical');
+
+        try {
+            const response = await fetch(`http://localhost:8000/animals/${animalId}/medical-records`);
+            if (!response.ok) {
+                const errorData = await response.json().catch(() => null);
+                throw new Error(errorData?.detail || 'Failed to fetch medical records');
+            }
+            const data: MedicalRecord[] = await response.json();
+            setMedicalRecords(data);
+        } catch (err) {
+            setMedicalError(err instanceof Error ? err.message : 'An error occurred');
+            setMedicalRecords([]);
+        } finally {
+            setIsLoadingMedical(false);
+        }
+    };
+
+    // Fetch intake records for a specific animal
+    const fetchIntakeRecords = async (animalId: number, animalName: string) => {
+        setIsLoadingIntake(true);
+        setIntakeError(null);
+        setSelectedAnimalId(animalId);
+        setSelectedAnimalName(animalName);
+        setAnimalsViewMode('intake');
+
+        try {
+            const response = await fetch(`http://localhost:8000/animals/${animalId}/intake-records`);
+            if (!response.ok) {
+                const errorData = await response.json().catch(() => null);
+                throw new Error(errorData?.detail || 'Failed to fetch intake records');
+            }
+            const data: IntakeRecord[] = await response.json();
+            setIntakeRecords(data);
+        } catch (err) {
+            setIntakeError(err instanceof Error ? err.message : 'An error occurred');
+            setIntakeRecords([]);
+        } finally {
+            setIsLoadingIntake(false);
         }
     };
 
@@ -300,7 +364,10 @@ const StaffDashboard = () => {
                         Users
                     </button>
                     <button
-                        onClick={() => setActiveTab('animals')}
+                        onClick={() => {
+                            setActiveTab('animals');
+                            setAnimalsViewMode('list');
+                        }}
                         className={`w-full text-left px-4 py-3 transition-colors ${activeTab === 'animals'
                             ? 'bg-emerald-50 text-emerald-700 border-l-4 border-emerald-500'
                             : 'text-gray-600 hover:bg-gray-50'
@@ -596,132 +663,332 @@ const StaffDashboard = () => {
 
                 {activeTab === 'animals' && (
                     <div>
-                        <h1 className="text-3xl font-bold text-gray-800 mb-6">Manage Animals</h1>
+                        {animalsViewMode === 'list' && (
+                            <>
+                                <h1 className="text-3xl font-bold text-gray-800 mb-6">Manage Animals</h1>
 
-                        {/* Filters */}
-                        <div className="bg-white rounded-lg shadow-md p-4 mb-6">
-                            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-                                <div>
-                                    <label className="block text-sm font-medium text-gray-700 mb-1">
-                                        Name Contains
-                                    </label>
-                                    <input
-                                        type="text"
-                                        value={animalNameFilter}
-                                        onChange={(e) => setAnimalNameFilter(e.target.value)}
-                                        className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                                        placeholder="Search by name..."
-                                    />
+                                {/* Filters */}
+                                <div className="bg-white rounded-lg shadow-md p-4 mb-6">
+                                    <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+                                        <div>
+                                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                                                Name Contains
+                                            </label>
+                                            <input
+                                                type="text"
+                                                value={animalNameFilter}
+                                                onChange={(e) => setAnimalNameFilter(e.target.value)}
+                                                className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                                placeholder="Search by name..."
+                                            />
+                                        </div>
+
+                                        <div>
+                                            <label className="block text-sm font-medium text-gray-700 mb-1">Species</label>
+                                            <input
+                                                type="text"
+                                                value={animalSpeciesFilter}
+                                                onChange={(e) => setAnimalSpeciesFilter(e.target.value)}
+                                                className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                                placeholder="e.g., Dog, Cat..."
+                                            />
+                                        </div>
+
+                                        <div>
+                                            <label className="block text-sm font-medium text-gray-700 mb-1">Status</label>
+                                            <select
+                                                value={animalStatusFilter}
+                                                onChange={(e) => setAnimalStatusFilter(e.target.value)}
+                                                className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                            >
+                                                <option value="">All</option>
+                                                <option value="Adoptable">Adoptable</option>
+                                                <option value="Foster">Foster</option>
+                                                <option value="Adopted">Adopted</option>
+                                                <option value="Hold">Hold</option>
+                                                <option value="Pending">Pending</option>
+                                            </select>
+                                        </div>
+
+                                        <div className="flex items-end">
+                                            <button
+                                                onClick={fetchAnimals}
+                                                disabled={isLoadingAnimals}
+                                                className="w-full bg-slate-600 hover:bg-slate-700 text-white font-semibold py-2 px-4 rounded transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                                            >
+                                                {isLoadingAnimals ? 'Loading...' : 'Apply Filters'}
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
 
-                                <div>
-                                    <label className="block text-sm font-medium text-gray-700 mb-1">Species</label>
-                                    <input
-                                        type="text"
-                                        value={animalSpeciesFilter}
-                                        onChange={(e) => setAnimalSpeciesFilter(e.target.value)}
-                                        className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                                        placeholder="e.g., Dog, Cat..."
-                                    />
-                                </div>
+                                {/* Error Display */}
+                                {animalsError && (
+                                    <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
+                                        {animalsError}
+                                    </div>
+                                )}
 
-                                <div>
-                                    <label className="block text-sm font-medium text-gray-700 mb-1">Status</label>
-                                    <select
-                                        value={animalStatusFilter}
-                                        onChange={(e) => setAnimalStatusFilter(e.target.value)}
-                                        className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                                    >
-                                        <option value="">All</option>
-                                        <option value="Adoptable">Adoptable</option>
-                                        <option value="Foster">Foster</option>
-                                        <option value="Adopted">Adopted</option>
-                                        <option value="Hold">Hold</option>
-                                        <option value="Pending">Pending</option>
-                                    </select>
-                                </div>
-
-                                <div className="flex items-end">
-                                    <button
-                                        onClick={fetchAnimals}
-                                        disabled={isLoadingAnimals}
-                                        className="w-full bg-slate-600 hover:bg-slate-700 text-white font-semibold py-2 px-4 rounded transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-                                    >
-                                        {isLoadingAnimals ? 'Loading...' : 'Apply Filters'}
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Error Display */}
-                        {animalsError && (
-                            <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
-                                {animalsError}
-                            </div>
+                                {/* Animals Table */}
+                                {isLoadingAnimals ? (
+                                    <div className="text-center py-12">
+                                        <div className="text-gray-500">Loading animals...</div>
+                                    </div>
+                                ) : animals.length === 0 ? (
+                                    <div className="text-center py-12">
+                                        <div className="text-gray-500">No animals found.</div>
+                                    </div>
+                                ) : (
+                                    <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                                        <table className="min-w-full divide-y divide-gray-200">
+                                            <thead className="bg-gray-50">
+                                                <tr>
+                                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                        ID
+                                                    </th>
+                                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                        Name
+                                                    </th>
+                                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                        Species
+                                                    </th>
+                                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                        Breed
+                                                    </th>
+                                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                        Status
+                                                    </th>
+                                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                        Intake Date
+                                                    </th>
+                                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                        Actions
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody className="bg-white divide-y divide-gray-200">
+                                                {animals.map((animal) => (
+                                                    <tr key={animal.A_ANIMALID}>
+                                                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                                            {animal.A_ANIMALID}
+                                                        </td>
+                                                        <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                                                            {animal.A_NAME}
+                                                        </td>
+                                                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                                            {animal.A_SPECIES}
+                                                        </td>
+                                                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                                            {animal.A_BREED || 'Unknown'}
+                                                        </td>
+                                                        <td className="px-6 py-4 whitespace-nowrap">
+                                                            <span className="inline-block px-2 py-1 text-xs font-semibold rounded bg-green-100 text-green-800">
+                                                                {animal.A_STATUS}
+                                                            </span>
+                                                        </td>
+                                                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                                            {formatDate(animal.A_INTAKEDATE)}
+                                                        </td>
+                                                        <td className="px-6 py-4 whitespace-nowrap text-sm">
+                                                            <div className="flex gap-2">
+                                                                <button
+                                                                    onClick={() => fetchMedicalRecords(animal.A_ANIMALID, animal.A_NAME)}
+                                                                    className="text-xs font-semibold px-3 py-1 rounded bg-slate-100 text-slate-700 hover:bg-slate-200"
+                                                                >
+                                                                    View medical
+                                                                </button>
+                                                                <button
+                                                                    onClick={() => fetchIntakeRecords(animal.A_ANIMALID, animal.A_NAME)}
+                                                                    className="text-xs font-semibold px-3 py-1 rounded bg-indigo-100 text-indigo-700 hover:bg-indigo-200"
+                                                                >
+                                                                    View intake
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                ))}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                )}
+                            </>
                         )}
 
-                        {/* Animals Table */}
-                        {isLoadingAnimals ? (
-                            <div className="text-center py-12">
-                                <div className="text-gray-500">Loading animals...</div>
-                            </div>
-                        ) : animals.length === 0 ? (
-                            <div className="text-center py-12">
-                                <div className="text-gray-500">No animals found.</div>
-                            </div>
-                        ) : (
-                            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                                <table className="min-w-full divide-y divide-gray-200">
-                                    <thead className="bg-gray-50">
-                                        <tr>
-                                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                                ID
-                                            </th>
-                                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                                Name
-                                            </th>
-                                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                                Species
-                                            </th>
-                                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                                Breed
-                                            </th>
-                                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                                Status
-                                            </th>
-                                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                                Intake Date
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody className="bg-white divide-y divide-gray-200">
-                                        {animals.map((animal) => (
-                                            <tr key={animal.A_ANIMALID}>
-                                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                                                    {animal.A_ANIMALID}
-                                                </td>
-                                                <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                                    {animal.A_NAME}
-                                                </td>
-                                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                                    {animal.A_SPECIES}
-                                                </td>
-                                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                                    {animal.A_BREED || 'Unknown'}
-                                                </td>
-                                                <td className="px-6 py-4 whitespace-nowrap">
-                                                    <span className="inline-block px-2 py-1 text-xs font-semibold rounded bg-green-100 text-green-800">
-                                                        {animal.A_STATUS}
-                                                    </span>
-                                                </td>
-                                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                                    {formatDate(animal.A_INTAKEDATE)}
-                                                </td>
-                                            </tr>
-                                        ))}
-                                    </tbody>
-                                </table>
-                            </div>
+                        {animalsViewMode === 'medical' && (
+                            <>
+                                <div className="flex justify-between items-center mb-6">
+                                    <h1 className="text-3xl font-bold text-gray-800">
+                                        Medical records for {selectedAnimalName ?? `Animal #${selectedAnimalId}`}
+                                    </h1>
+                                    <button
+                                        onClick={() => {
+                                            setAnimalsViewMode('list');
+                                            setMedicalFilter('');
+                                        }}
+                                        className="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium rounded-lg transition-colors"
+                                    >
+                                        ← Back to animals list
+                                    </button>
+                                </div>
+
+                                <div className="flex justify-end mb-4">
+                                    <input
+                                        type="text"
+                                        value={medicalFilter}
+                                        onChange={(e) => setMedicalFilter(e.target.value)}
+                                        placeholder="Filter by treatment..."
+                                        className="border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    />
+                                </div>
+
+                                {isLoadingMedical && (
+                                    <div className="text-center py-12">
+                                        <div className="text-gray-500">Loading medical records...</div>
+                                    </div>
+                                )}
+
+                                {medicalError && (
+                                    <div className="mb-6 bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded">
+                                        {medicalError}
+                                    </div>
+                                )}
+
+                                {!isLoadingMedical && !medicalError && medicalRecords.length === 0 && (
+                                    <div className="text-center py-12">
+                                        <div className="text-gray-500">No medical records found for this animal.</div>
+                                    </div>
+                                )}
+
+                                {!isLoadingMedical && !medicalError && medicalRecords.length > 0 && (
+                                    <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                                        <table className="min-w-full divide-y divide-gray-200">
+                                            <thead className="bg-gray-50">
+                                                <tr>
+                                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                        Date
+                                                    </th>
+                                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                        Treatment
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody className="bg-white divide-y divide-gray-200">
+                                                {medicalRecords
+                                                    .filter(record =>
+                                                        !medicalFilter ||
+                                                        record.MR_TREATMENTTYPE.toLowerCase().includes(medicalFilter.toLowerCase())
+                                                    )
+                                                    .map((record) => (
+                                                        <tr key={record.MR_RECORDID}>
+                                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
+                                                                {new Date(record.MR_TREATMENTDATE).toLocaleDateString('en-US', {
+                                                                    year: 'numeric',
+                                                                    month: 'short',
+                                                                    day: 'numeric',
+                                                                })}
+                                                            </td>
+                                                            <td className="px-6 py-4 text-sm text-gray-700">
+                                                                {record.MR_TREATMENTTYPE}
+                                                            </td>
+                                                        </tr>
+                                                    ))}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                )}
+                            </>
+                        )}
+
+                        {animalsViewMode === 'intake' && (
+                            <>
+                                <div className="flex justify-between items-center mb-6">
+                                    <h1 className="text-3xl font-bold text-gray-800">
+                                        Intake records for {selectedAnimalName ?? `Animal #${selectedAnimalId}`}
+                                    </h1>
+                                    <button
+                                        onClick={() => {
+                                            setAnimalsViewMode('list');
+                                            setIntakeFilter('');
+                                        }}
+                                        className="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium rounded-lg transition-colors"
+                                    >
+                                        ← Back to animals list
+                                    </button>
+                                </div>
+
+                                <div className="flex justify-end mb-4">
+                                    <input
+                                        type="text"
+                                        value={intakeFilter}
+                                        onChange={(e) => setIntakeFilter(e.target.value)}
+                                        placeholder="Filter by type or condition..."
+                                        className="border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    />
+                                </div>
+
+                                {isLoadingIntake && (
+                                    <div className="text-center py-12">
+                                        <div className="text-gray-500">Loading intake records...</div>
+                                    </div>
+                                )}
+
+                                {intakeError && (
+                                    <div className="mb-6 bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded">
+                                        {intakeError}
+                                    </div>
+                                )}
+
+                                {!isLoadingIntake && !intakeError && intakeRecords.length === 0 && (
+                                    <div className="text-center py-12">
+                                        <div className="text-gray-500">No intake records found for this animal.</div>
+                                    </div>
+                                )}
+
+                                {!isLoadingIntake && !intakeError && intakeRecords.length > 0 && (
+                                    <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                                        <table className="min-w-full divide-y divide-gray-200">
+                                            <thead className="bg-gray-50">
+                                                <tr>
+                                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                        Intake Date
+                                                    </th>
+                                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                        Intake Type
+                                                    </th>
+                                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                        Condition
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody className="bg-white divide-y divide-gray-200">
+                                                {intakeRecords
+                                                    .filter(record =>
+                                                        !intakeFilter ||
+                                                        record.IR_INTAKETYPE.toLowerCase().includes(intakeFilter.toLowerCase()) ||
+                                                        record.IR_CONDITION.toLowerCase().includes(intakeFilter.toLowerCase())
+                                                    )
+                                                    .map((record) => (
+                                                        <tr key={record.IR_INTAKEID}>
+                                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
+                                                                {new Date(record.IR_INTAKEDATE).toLocaleDateString('en-US', {
+                                                                    year: 'numeric',
+                                                                    month: 'short',
+                                                                    day: 'numeric',
+                                                                })}
+                                                            </td>
+                                                            <td className="px-6 py-4 text-sm text-gray-700">
+                                                                {record.IR_INTAKETYPE}
+                                                            </td>
+                                                            <td className="px-6 py-4 text-sm text-gray-700">
+                                                                {record.IR_CONDITION}
+                                                            </td>
+                                                        </tr>
+                                                    ))}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                )}
+                            </>
                         )}
                     </div>
                 )}

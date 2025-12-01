@@ -40,3 +40,19 @@ export interface AppUser {
     U_ROLE: UserRole;
 }
 
+// Medical Record types
+export interface MedicalRecord {
+    MR_RECORDID: number;
+    MR_ANIMALID: number;
+    MR_TREATMENTTYPE: string;
+    MR_TREATMENTDATE: string; // ISO date string
+}
+
+// Intake Record types
+export interface IntakeRecord {
+    IR_INTAKEID: number;
+    IR_ANIMALID: number;
+    IR_INTAKETYPE: string;
+    IR_INTAKEDATE: string; // ISO date string
+    IR_CONDITION: string;
+}

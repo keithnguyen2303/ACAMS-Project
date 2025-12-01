@@ -54,3 +54,20 @@ class LoginRequest(BaseModel):
 
 class LoginResponse(UserOut):
     pass
+
+class MedicalRecordOut(BaseModel):
+    MR_RECORDID: int
+    MR_ANIMALID: int
+    MR_TREATMENTTYPE: str
+    MR_TREATMENTDATE: date
+
+    model_config = ConfigDict(from_attributes=True)
+
+class IntakeRecordOut(BaseModel):
+    IR_INTAKEID: int
+    IR_ANIMALID: int
+    IR_INTAKETYPE: str
+    IR_INTAKEDATE: date
+    IR_CONDITION: str
+
+    model_config = ConfigDict(from_attributes=True)

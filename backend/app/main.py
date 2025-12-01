@@ -7,7 +7,7 @@ from sqlalchemy.exc import IntegrityError
 from app.core.config import settings
 from app.deps import get_db
 from app.models import UserRole, RequestStatus, AnimalStatus
-from app.schemas import AnimalOut, UserCreate, UserOut, AdoptionRequestCreate, AdoptionRequestOut, AdoptionRequestStatusUpdate, LoginRequest, LoginResponse
+from app.schemas import AnimalOut, UserCreate, UserOut, AdoptionRequestCreate, AdoptionRequestOut, AdoptionRequestStatusUpdate, LoginRequest, LoginResponse, MedicalRecordOut, IntakeRecordOut
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(title=settings.PROJECT_NAME, version=settings.PROJECT_VERSION)
@@ -549,3 +549,54 @@ def update_adoption_request_status(
     )
     final_row = final_result.mappings().one()
     return AdoptionRequestOut.model_validate(final_row)
+
+@app.get("/animals/{animal_id}/medical-records", response_model=List[MedicalRecordOut])
+def get_animal_medical_records(animal_id: int, db: Session = Depends(get_db)):
+    # Verify animal exists
+    animal_check = db.execute(
+        text("SELECT 1 FROM animal WHERE a_animalid = :animal_id"),
+        {"animal_id": animal_id}
+    )
+    if not animal_check.first():
+        raise HTTPException(status_code=404, detail="Animal not found")
+    
+    # Fetch medical records for this animal
+    sql = text("""
+        SELECT
+            mr_recordid      AS "MR_RECORDID",
+            mr_animalid      AS "MR_ANIMALID",
+            mr_treatmenttype AS "MR_TREATMENTTYPE",
+            mr_treatmentdate AS "MR_TREATMENTDATE"
+        FROM medical_record
+        WHERE mr_animalid = :animal_id
+        ORDER BY mr_treatmentdate DESC
+    """)
+    result = db.execute(sql, {"animal_id": animal_id})
+    rows = result.mappings().all()
+    return [MedicalRecordOut.model_validate(row) for row in rows]
+
+@app.get("/animals/{animal_id}/intake-records", response_model=List[IntakeRecordOut])
+def get_animal_intake_records(animal_id: int, db: Session = Depends(get_db)):
+    # Verify animal exists
+    animal_check = db.execute(
+        text("SELECT 1 FROM animal WHERE a_animalid = :animal_id"),
+        {"animal_id": animal_id}
+    )
+    if not animal_check.first():
+        raise HTTPException(status_code=404, detail="Animal not found")
+    
+    # Fetch intake records for this animal
+    sql = text("""
+        SELECT
+            ir_intakeid   AS "IR_INTAKEID",
+            ir_animalid   AS "IR_ANIMALID",
+            ir_intaketype AS "IR_INTAKETYPE",
+            ir_intakedate AS "IR_INTAKEDATE",
+            ir_condition  AS "IR_CONDITION"
+        FROM intake_record
+        WHERE ir_animalid = :animal_id
+        ORDER BY ir_intakedate DESC
+    """)
+    result = db.execute(sql, {"animal_id": animal_id})
+    rows = result.mappings().all()
+    return [IntakeRecordOut.model_validate(row) for row in rows]
