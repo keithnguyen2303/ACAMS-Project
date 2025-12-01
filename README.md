@@ -122,6 +122,6 @@ docker compose up --build
 Once all containers are running:
 
 - Frontend: http://localhost:5173  
-- Backend API: http://localhost:8000  
+- Backend API: http://localhost:8000/docs  
 
 Make sure Docker is still running while accessing the app.
