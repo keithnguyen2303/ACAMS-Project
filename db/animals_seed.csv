@@ -1,0 +1,1001 @@
+a_name,a_species,a_breed,a_status,a_intakedate
+Cooper,Dog,Poodle,Adoptable,2021-11-18
+Tiger,Cat,Domestic Longhair,Adoptable,2024-12-10
+Bear,Dog,Jack Russell Terrier,Adoptable,2022-12-22
+Ginger,Cat,Domestic Shorthair,Hold,2021-08-26
+Shadow,Dog,Pug,Foster,2022-11-24
+Buddy,Dog,Rottweiler,Hold,2020-06-19
+Charlie,Dog,Labrador Retriever,Pending,2020-06-13
+Luna,Cat,Norwegian Forest,Adoptable,2020-02-21
+Bear,Dog,Great Dane,Adoptable,2022-09-29
+Salem,Cat,Bombay,Adoptable,2023-04-30
+Midnight,Cat,Tabby,Pending,2024-08-26
+Bandit,Dog,Labrador Retriever,Pending,2021-02-18
+Finn,Dog,Poodle,Foster,2020-03-14
+Mittens,Cat,Bombay,Hold,2023-05-25
+Nala,Cat,Persian,Adoptable,2024-11-13
+Shadow,Dog,Border Collie,Adoptable,2023-03-15
+Loki,Dog,Border Collie,Hold,2021-10-27
+Oscar,Dog,Jack Russell Terrier,Hold,2021-11-19
+Peanut,Cat,Maine Coon,Hold,2024-07-06
+Harley,Dog,Pug,Foster,2023-11-02
+Oscar,Dog,Jack Russell Terrier,Pending,2024-06-01
+Chloe,Cat,British Shorthair,Foster,2021-03-03
+Shadow,Dog,German Shepherd,Pending,2023-04-09
+Oscar,Dog,Bulldog,Adopted,2024-01-01
+Luna,Cat,Scottish Fold,Pending,2023-10-27
+Duke,Dog,Jack Russell Terrier,Adoptable,2021-08-01
+Luna,Cat,Calico,Pending,2020-10-11
+Salem,Cat,Turkish Angora,Adopted,2021-11-06
+Cleo,Cat,Sphynx,Adoptable,2024-11-30
+Thor,Dog,Beagle,Pending,2022-06-24
+Max,Dog,Rottweiler,Adoptable,2022-07-03
+Bandit,Dog,Corgi,Adoptable,2024-09-21
+Misty,Cat,Tabby,Foster,2020-01-03
+Smokey,Cat,Abyssinian,Foster,2022-03-23
+Oreo,Cat,Norwegian Forest,Hold,2023-07-13
+Snowball,Cat,Bombay,Hold,2020-08-21
+Willow,Cat,Calico,Hold,2022-08-01
+Finn,Dog,Boxer,Pending,2022-04-11
+Loki,Dog,Golden Retriever,Adopted,2023-03-04
+Pumpkin,Cat,Turkish Angora,Adopted,2023-12-05
+Rocky,Dog,Husky,Foster,2021-06-15
+Oliver,Cat,British Shorthair,Adopted,2021-09-19
+Hazel,Cat,Bengal,Pending,2023-12-26
+Bear,Dog,Bulldog,Adopted,2024-04-15
+Midnight,Cat,Scottish Fold,Pending,2023-03-19
+Max,Dog,Poodle,Hold,2022-09-24
+Nala,Cat,Sphynx,Pending,2022-10-12
+Simba,Cat,Persian,Adopted,2023-12-26
+Hazel,Cat,Calico,Adoptable,2021-01-17
+Finn,Dog,Great Dane,Pending,2023-11-23
+Duke,Dog,Border Collie,Adoptable,2024-10-13
+Toby,Dog,Boxer,Hold,2020-04-27
+Peanut,Cat,Abyssinian,Hold,2020-06-26
+Max,Dog,Pug,Adoptable,2020-01-16
+Midnight,Cat,Russian Blue,Adopted,2023-11-30
+Bruno,Dog,Boxer,Adopted,2021-12-11
+Cleo,Cat,Maine Coon,Pending,2020-05-14
+Midnight,Cat,Abyssinian,Pending,2021-07-05
+Luna,Cat,Russian Blue,Hold,2024-08-02
+Bruno,Dog,Australian Shepherd,Pending,2021-01-21
+Cleo,Cat,Russian Blue,Adoptable,2023-02-28
+Peanut,Cat,Persian,Foster,2022-05-29
+Misty,Cat,Birman,Pending,2020-10-21
+Harley,Dog,Bulldog,Pending,2021-07-07
+Tigger,Cat,Norwegian Forest,Adopted,2020-07-10
+Pumpkin,Cat,Calico,Adopted,2021-06-26
+Bruno,Dog,Australian Shepherd,Adopted,2024-10-22
+Oreo,Cat,Norwegian Forest,Adoptable,2023-09-30
+Toby,Dog,Dalmatian,Hold,2020-01-29
+Luna,Cat,Sphynx,Pending,2022-12-26
+Salem,Cat,Domestic Shorthair,Hold,2022-10-27
+Tigger,Cat,Siamese,Adopted,2020-09-23
+Bella,Dog,Shih Tzu,Adoptable,2023-01-10
+Luna,Cat,Persian,Foster,2024-02-15
+Diesel,Dog,Rottweiler,Adopted,2024-01-07
+Diesel,Dog,Corgi,Adoptable,2024-02-13
+Snowball,Cat,Turkish Angora,Adopted,2021-01-28
+Salem,Cat,Savannah,Foster,2022-07-04
+Bandit,Dog,Bulldog,Adoptable,2020-10-05
+Luna,Cat,Savannah,Adopted,2024-03-27
+Charlie,Dog,Doberman,Adopted,2024-08-22
+Bella,Dog,Boxer,Hold,2021-01-13
+Finn,Dog,Chihuahua,Adoptable,2023-02-03
+Hazel,Cat,Domestic Longhair,Foster,2020-04-15
+Cooper,Dog,Border Collie,Hold,2021-07-31
+Willow,Cat,Savannah,Foster,2020-03-03
+Zeus,Dog,Labrador Retriever,Pending,2020-07-19
+Riley,Dog,Doberman,Foster,2023-02-20
+Salem,Cat,Savannah,Hold,2022-08-29
+Thor,Dog,Border Collie,Foster,2021-12-10
+Max,Dog,German Shepherd,Adoptable,2020-01-01
+Misty,Cat,Bombay,Pending,2024-01-14
+Loki,Dog,Golden Retriever,Adopted,2023-07-01
+Willow,Cat,Bengal,Foster,2021-07-06
+Mochi,Cat,Ragdoll,Foster,2022-02-08
+Buddy,Dog,Border Collie,Pending,2024-04-23
+Tiger,Cat,Ragdoll,Pending,2022-05-06
+Cooper,Dog,Dalmatian,Adopted,2022-06-22
+Salem,Cat,Norwegian Forest,Pending,2021-02-04
+Rusty,Dog,Pit Bull,Adopted,2024-05-02
+Bailey,Dog,Bulldog,Adoptable,2021-07-25
+Harley,Dog,Jack Russell Terrier,Adoptable,2023-05-25
+Ginger,Cat,Calico,Hold,2023-05-08
+Zeus,Dog,Rottweiler,Pending,2021-01-01
+Mittens,Cat,Birman,Adoptable,2020-11-10
+Peanut,Cat,Scottish Fold,Hold,2023-05-08
+Mochi,Cat,Turkish Angora,Hold,2022-11-10
+Bailey,Dog,Bulldog,Adoptable,2022-02-09
+Leo,Dog,Australian Shepherd,Hold,2024-07-15
+Cleo,Cat,Calico,Adopted,2022-02-01
+Oreo,Cat,Tabby,Foster,2022-03-30
+Snowball,Cat,Sphynx,Adopted,2020-06-04
+Harley,Dog,Beagle,Adopted,2024-10-06
+Mocha,Cat,Birman,Adopted,2023-12-25
+Snowball,Cat,Russian Blue,Adoptable,2023-05-29
+Tigger,Cat,Birman,Foster,2021-03-10
+Leo,Dog,Poodle,Pending,2023-10-29
+Misty,Cat,Maine Coon,Pending,2021-07-22
+Oreo,Cat,Abyssinian,Hold,2021-08-22
+Mochi,Cat,Abyssinian,Hold,2020-02-12
+Riley,Dog,Bulldog,Adoptable,2022-04-18
+Charlie,Dog,Chihuahua,Hold,2024-10-11
+Harley,Dog,Golden Retriever,Pending,2020-10-13
+Rocky,Dog,Boxer,Adopted,2022-11-17
+Harley,Dog,Jack Russell Terrier,Foster,2022-02-14
+Bruno,Dog,Poodle,Pending,2022-12-20
+Toby,Dog,German Shepherd,Pending,2024-10-30
+Oliver,Cat,Bombay,Foster,2020-07-02
+Luna,Cat,Savannah,Adoptable,2024-08-30
+Max,Dog,Great Dane,Foster,2022-11-07
+Simba,Cat,Persian,Adopted,2022-05-15
+Leo,Dog,Labrador Retriever,Adopted,2023-08-04
+Smokey,Cat,Maine Coon,Hold,2021-03-10
+Pumpkin,Cat,Calico,Hold,2022-08-27
+Salem,Cat,Siamese,Hold,2023-03-26
+Tigger,Cat,Bengal,Adopted,2020-10-19
+Tigger,Cat,Siamese,Adoptable,2020-07-04
+Ginger,Cat,Domestic Shorthair,Hold,2024-07-24
+Harley,Dog,Pit Bull,Adopted,2020-03-31
+Misty,Cat,Savannah,Adoptable,2021-12-01
+Diesel,Dog,Chihuahua,Adopted,2022-12-09
+Mittens,Cat,Persian,Hold,2024-07-06
+Max,Dog,Rottweiler,Pending,2022-12-07
+Simba,Cat,Domestic Longhair,Hold,2022-07-20
+Pumpkin,Cat,Bengal,Adoptable,2024-05-01
+Riley,Dog,Golden Retriever,Hold,2020-02-10
+Pumpkin,Cat,Siamese,Adopted,2020-03-06
+Milo,Dog,Dalmatian,Foster,2023-10-25
+Chloe,Cat,Turkish Angora,Pending,2023-07-30
+Chloe,Cat,Abyssinian,Adopted,2022-06-24
+Tigger,Cat,Sphynx,Adopted,2022-03-26
+Oscar,Dog,Doberman,Pending,2024-07-11
+Oliver,Cat,Sphynx,Hold,2022-01-06
+Buddy,Dog,Labrador Retriever,Pending,2023-09-30
+Thor,Dog,Beagle,Foster,2023-08-12
+Oliver,Cat,Persian,Foster,2023-11-02
+Smokey,Cat,Ragdoll,Hold,2021-09-17
+Chloe,Cat,Domestic Longhair,Pending,2023-04-18
+Rocky,Dog,Doberman,Pending,2021-10-24
+Hazel,Cat,Ragdoll,Adopted,2022-12-07
+Rusty,Dog,Boxer,Foster,2021-10-19
+Leo,Dog,Chihuahua,Adoptable,2023-02-09
+Max,Dog,Chihuahua,Foster,2022-02-02
+Leo,Dog,Bulldog,Foster,2023-11-28
+Rocky,Dog,German Shepherd,Hold,2021-01-01
+Willow,Cat,Abyssinian,Adopted,2022-05-08
+Bandit,Dog,Great Dane,Hold,2021-05-10
+Finn,Dog,Jack Russell Terrier,Foster,2022-09-06
+Thor,Dog,Australian Shepherd,Hold,2023-09-30
+Thor,Dog,Bulldog,Pending,2020-12-18
+Leo,Dog,Australian Shepherd,Foster,2024-07-13
+Peanut,Cat,Domestic Longhair,Adoptable,2023-07-08
+Bruno,Dog,Boxer,Hold,2020-06-08
+Smokey,Cat,Sphynx,Pending,2021-12-29
+Tigger,Cat,Maine Coon,Foster,2022-08-06
+Bear,Dog,Pit Bull,Adopted,2024-09-05
+Tigger,Cat,Tabby,Foster,2022-07-20
+Oreo,Cat,Abyssinian,Foster,2021-10-24
+Bella,Dog,Shih Tzu,Hold,2024-08-17
+Milo,Dog,Dalmatian,Foster,2023-09-28
+Willow,Cat,Norwegian Forest,Foster,2021-01-08
+Buddy,Dog,Corgi,Adoptable,2022-08-22
+Snowball,Cat,Turkish Angora,Hold,2020-07-01
+Nala,Cat,Ragdoll,Adoptable,2022-12-23
+Milo,Dog,Shih Tzu,Adoptable,2023-06-25
+Pumpkin,Cat,Siamese,Adopted,2020-01-01
+Tiger,Cat,Bengal,Adopted,2021-10-05
+Riley,Dog,Jack Russell Terrier,Foster,2024-01-28
+Mocha,Cat,Norwegian Forest,Adopted,2020-12-07
+Mochi,Cat,Scottish Fold,Adopted,2021-09-12
+Bear,Dog,Poodle,Adoptable,2021-12-15
+Oreo,Cat,Russian Blue,Hold,2022-08-10
+Mittens,Cat,Turkish Angora,Foster,2024-12-20
+Midnight,Cat,Ragdoll,Adoptable,2024-07-23
+Duke,Dog,Boxer,Hold,2020-08-28
+Bella,Dog,Australian Shepherd,Pending,2021-01-22
+Oliver,Cat,British Shorthair,Adoptable,2022-06-08
+Bear,Dog,Beagle,Pending,2022-07-21
+Simba,Cat,Ragdoll,Foster,2024-01-20
+Mocha,Cat,Domestic Shorthair,Adoptable,2022-04-29
+Simba,Cat,Turkish Angora,Pending,2020-03-04
+Willow,Cat,Turkish Angora,Hold,2020-03-27
+Tigger,Cat,Abyssinian,Pending,2023-02-28
+Zeus,Dog,Beagle,Foster,2024-12-17
+Thor,Dog,Rottweiler,Hold,2023-07-21
+Bella,Dog,Pug,Hold,2023-03-20
+Zeus,Dog,Labrador Retriever,Adopted,2020-04-27
+Peanut,Cat,Persian,Adopted,2024-05-04
+Bruno,Dog,Labrador Retriever,Hold,2020-09-11
+Mittens,Cat,Siamese,Hold,2022-03-15
+Rocky,Dog,Pit Bull,Adoptable,2024-06-11
+Jasper,Cat,Abyssinian,Pending,2022-03-27
+Leo,Dog,Chihuahua,Hold,2021-01-21
+Luna,Cat,Scottish Fold,Adoptable,2023-10-29
+Simba,Cat,Persian,Hold,2022-09-14
+Max,Dog,Shih Tzu,Adopted,2020-02-18
+Oreo,Cat,Turkish Angora,Foster,2020-08-18
+Finn,Dog,Australian Shepherd,Hold,2021-11-07
+Mittens,Cat,Norwegian Forest,Foster,2024-02-08
+Salem,Cat,British Shorthair,Hold,2023-03-16
+Rocky,Dog,Boxer,Hold,2024-06-30
+Snowball,Cat,Scottish Fold,Foster,2022-09-01
+Bella,Dog,Chihuahua,Adopted,2023-02-11
+Bear,Dog,Labrador Retriever,Adoptable,2022-04-30
+Nala,Cat,Savannah,Foster,2020-09-21
+Luna,Cat,Tabby,Adopted,2023-06-26
+Cooper,Dog,Shih Tzu,Hold,2020-01-05
+Riley,Dog,Labrador Retriever,Pending,2023-08-24
+Bella,Dog,Rottweiler,Adopted,2022-07-03
+Charlie,Dog,Boxer,Adoptable,2024-07-29
+Luna,Cat,Bengal,Foster,2020-05-23
+Misty,Cat,Persian,Adopted,2022-09-30
+Bruno,Dog,German Shepherd,Foster,2022-04-18
+Oliver,Cat,Turkish Angora,Foster,2022-04-03
+Jasper,Cat,Domestic Shorthair,Foster,2023-02-13
+Mocha,Cat,Abyssinian,Adoptable,2021-08-02
+Mochi,Cat,Norwegian Forest,Adopted,2020-09-13
+Luna,Cat,Russian Blue,Pending,2023-04-07
+Tiger,Cat,Sphynx,Hold,2021-05-14
+Rusty,Dog,Chihuahua,Pending,2023-03-09
+Jasper,Cat,Persian,Adoptable,2020-07-18
+Buddy,Dog,Shih Tzu,Adoptable,2020-05-02
+Diesel,Dog,Corgi,Pending,2023-01-19
+Bandit,Dog,Great Dane,Hold,2020-04-26
+Harley,Dog,Dalmatian,Foster,2022-07-17
+Loki,Dog,Border Collie,Pending,2023-01-11
+Mocha,Cat,British Shorthair,Foster,2023-02-25
+Duke,Dog,Border Collie,Pending,2022-05-31
+Bruno,Dog,Dalmatian,Adopted,2020-04-16
+Smokey,Cat,Norwegian Forest,Adopted,2022-02-23
+Nala,Cat,Norwegian Forest,Adopted,2021-10-18
+Charlie,Dog,Dalmatian,Hold,2023-12-02
+Toby,Dog,German Shepherd,Adopted,2020-06-06
+Bruno,Dog,Pit Bull,Adopted,2020-07-03
+Toby,Dog,Boxer,Adoptable,2024-03-31
+Pumpkin,Cat,Ragdoll,Hold,2021-04-29
+Finn,Dog,Pit Bull,Pending,2020-09-14
+Thor,Dog,Jack Russell Terrier,Hold,2022-06-03
+Nala,Cat,Maine Coon,Adoptable,2020-02-16
+Ginger,Cat,Siamese,Adoptable,2022-01-11
+Riley,Dog,Pit Bull,Adoptable,2024-01-19
+Zeus,Dog,Rottweiler,Adoptable,2024-09-07
+Rusty,Dog,Chihuahua,Hold,2023-02-15
+Misty,Cat,Tabby,Adoptable,2022-06-05
+Pumpkin,Cat,Scottish Fold,Pending,2023-05-03
+Jasper,Cat,Sphynx,Adopted,2023-10-15
+Harley,Dog,Rottweiler,Foster,2020-04-04
+Hazel,Cat,Norwegian Forest,Pending,2022-01-20
+Snowball,Cat,Calico,Adoptable,2021-03-27
+Riley,Dog,Dalmatian,Foster,2023-09-01
+Leo,Dog,Jack Russell Terrier,Adoptable,2021-01-17
+Jasper,Cat,Norwegian Forest,Adopted,2024-04-28
+Bear,Dog,Great Dane,Adoptable,2023-12-22
+Oreo,Cat,Domestic Longhair,Pending,2022-07-26
+Willow,Cat,Domestic Longhair,Foster,2021-01-16
+Tiger,Cat,Siamese,Adoptable,2022-05-09
+Oliver,Cat,Bengal,Hold,2020-06-08
+Nala,Cat,Bombay,Foster,2022-06-02
+Pumpkin,Cat,Persian,Foster,2021-10-16
+Milo,Dog,Shih Tzu,Hold,2023-01-20
+Riley,Dog,Rottweiler,Pending,2024-07-02
+Finn,Dog,Great Dane,Foster,2020-10-05
+Toby,Dog,Doberman,Adopted,2020-08-03
+Bear,Dog,Doberman,Adoptable,2023-11-25
+Snowball,Cat,Tabby,Adoptable,2021-06-24
+Nala,Cat,Calico,Adoptable,2021-03-20
+Cooper,Dog,Pug,Hold,2020-05-20
+Willow,Cat,Scottish Fold,Foster,2023-06-20
+Charlie,Dog,Corgi,Hold,2024-08-22
+Thor,Dog,Dalmatian,Pending,2022-12-02
+Simba,Cat,Abyssinian,Hold,2020-05-24
+Bailey,Dog,Labrador Retriever,Hold,2024-02-10
+Mochi,Cat,Maine Coon,Hold,2021-01-15
+Thor,Dog,Poodle,Adoptable,2023-11-20
+Cleo,Cat,Savannah,Adoptable,2023-04-07
+Bruno,Dog,Bulldog,Adopted,2020-08-28
+Mochi,Cat,Abyssinian,Adopted,2023-02-03
+Oscar,Dog,Chihuahua,Hold,2022-03-21
+Cleo,Cat,Ragdoll,Adoptable,2024-08-28
+Harley,Dog,Poodle,Adoptable,2020-09-14
+Mittens,Cat,Scottish Fold,Pending,2024-12-13
+Simba,Cat,Scottish Fold,Foster,2024-10-14
+Rocky,Dog,Corgi,Adopted,2022-03-31
+Bear,Dog,Corgi,Adoptable,2024-03-17
+Rocky,Dog,German Shepherd,Adoptable,2024-08-10
+Buddy,Dog,Boxer,Hold,2022-08-27
+Mocha,Cat,Turkish Angora,Adoptable,2023-06-25
+Chloe,Cat,Bombay,Adopted,2020-09-08
+Pumpkin,Cat,Maine Coon,Adoptable,2022-01-13
+Rocky,Dog,Shih Tzu,Adopted,2024-07-18
+Jasper,Cat,Russian Blue,Adopted,2021-05-05
+Cleo,Cat,Ragdoll,Pending,2023-01-27
+Buddy,Dog,Border Collie,Pending,2024-03-07
+Diesel,Dog,Pug,Foster,2021-08-07
+Bailey,Dog,German Shepherd,Adopted,2024-02-03
+Chloe,Cat,Norwegian Forest,Foster,2020-11-16
+Snowball,Cat,Persian,Adopted,2021-07-05
+Misty,Cat,Domestic Shorthair,Adopted,2023-10-16
+Bruno,Dog,Labrador Retriever,Hold,2020-06-30
+Peanut,Cat,Bengal,Foster,2020-09-02
+Smokey,Cat,Ragdoll,Adoptable,2020-11-08
+Bear,Dog,Bulldog,Foster,2023-01-22
+Hazel,Cat,Bengal,Pending,2022-06-06
+Tigger,Cat,Maine Coon,Adopted,2023-02-07
+Peanut,Cat,Abyssinian,Hold,2020-08-23
+Tiger,Cat,Norwegian Forest,Foster,2021-03-18
+Bear,Dog,Corgi,Hold,2023-01-05
+Tigger,Cat,British Shorthair,Adopted,2020-05-26
+Leo,Dog,Chihuahua,Adoptable,2023-04-24
+Jasper,Cat,Persian,Hold,2024-11-01
+Ginger,Cat,British Shorthair,Adoptable,2022-08-30
+Midnight,Cat,British Shorthair,Pending,2023-04-15
+Tigger,Cat,Persian,Foster,2024-09-05
+Jasper,Cat,Turkish Angora,Adoptable,2020-10-26
+Simba,Cat,Sphynx,Foster,2020-04-07
+Shadow,Dog,Beagle,Hold,2022-02-18
+Mittens,Cat,Abyssinian,Foster,2022-09-16
+Willow,Cat,Domestic Longhair,Foster,2020-03-19
+Charlie,Dog,Pug,Pending,2022-05-18
+Chloe,Cat,Domestic Shorthair,Adopted,2023-07-26
+Oreo,Cat,Siamese,Hold,2023-01-02
+Toby,Dog,Dalmatian,Foster,2020-01-18
+Cleo,Cat,Sphynx,Hold,2023-11-16
+Ginger,Cat,Persian,Pending,2020-10-01
+Rusty,Dog,German Shepherd,Adopted,2022-07-20
+Tiger,Cat,Turkish Angora,Adopted,2020-12-17
+Nala,Cat,Scottish Fold,Foster,2021-02-11
+Diesel,Dog,Great Dane,Pending,2022-02-07
+Finn,Dog,Boxer,Adoptable,2020-12-09
+Salem,Cat,Russian Blue,Adopted,2024-08-31
+Bear,Dog,Doberman,Adoptable,2021-07-11
+Duke,Dog,Great Dane,Adopted,2021-07-29
+Peanut,Cat,Sphynx,Adoptable,2021-12-06
+Milo,Dog,Boxer,Pending,2024-08-19
+Rocky,Dog,Border Collie,Pending,2022-07-11
+Nala,Cat,Bengal,Adoptable,2024-06-02
+Chloe,Cat,Abyssinian,Pending,2024-02-12
+Oreo,Cat,Tabby,Pending,2023-06-15
+Thor,Dog,Doberman,Pending,2023-08-05
+Misty,Cat,Birman,Adopted,2020-04-27
+Bear,Dog,Jack Russell Terrier,Foster,2021-08-02
+Milo,Dog,Bulldog,Adoptable,2023-05-28
+Willow,Cat,Russian Blue,Hold,2024-09-16
+Oscar,Dog,Shih Tzu,Hold,2022-11-28
+Max,Dog,Pit Bull,Hold,2020-01-23
+Bailey,Dog,Golden Retriever,Pending,2024-12-16
+Jasper,Cat,Turkish Angora,Adoptable,2024-03-16
+Shadow,Dog,Pit Bull,Foster,2020-08-24
+Misty,Cat,Siamese,Pending,2024-07-23
+Willow,Cat,Bengal,Adoptable,2024-04-29
+Oreo,Cat,Calico,Pending,2022-05-18
+Finn,Dog,Doberman,Foster,2022-01-25
+Buddy,Dog,Shih Tzu,Adoptable,2024-04-05
+Tiger,Cat,Persian,Foster,2024-12-15
+Simba,Cat,Sphynx,Pending,2024-03-22
+Bear,Dog,Bulldog,Adoptable,2023-01-19
+Smokey,Cat,Persian,Adoptable,2020-06-20
+Chloe,Cat,Persian,Adopted,2024-09-03
+Milo,Dog,Chihuahua,Adopted,2022-12-06
+Jasper,Cat,Calico,Adoptable,2021-04-10
+Smokey,Cat,Scottish Fold,Pending,2020-11-01
+Oliver,Cat,Maine Coon,Adoptable,2023-05-04
+Oscar,Dog,Bulldog,Foster,2021-10-20
+Tiger,Cat,Bombay,Adopted,2024-11-20
+Midnight,Cat,Turkish Angora,Hold,2021-10-16
+Diesel,Dog,Great Dane,Adopted,2020-02-20
+Ginger,Cat,Bombay,Foster,2023-12-25
+Rusty,Dog,Rottweiler,Foster,2020-03-12
+Simba,Cat,Scottish Fold,Adoptable,2020-03-01
+Snowball,Cat,Norwegian Forest,Hold,2023-09-04
+Charlie,Dog,Beagle,Adoptable,2023-06-19
+Tiger,Cat,Abyssinian,Adoptable,2024-01-16
+Zeus,Dog,Rottweiler,Foster,2021-08-31
+Shadow,Dog,Husky,Pending,2020-05-12
+Smokey,Cat,Bengal,Hold,2023-05-05
+Thor,Dog,Golden Retriever,Adopted,2020-04-04
+Riley,Dog,Border Collie,Adoptable,2023-05-23
+Bailey,Dog,Boxer,Pending,2022-06-18
+Ginger,Cat,Domestic Longhair,Adoptable,2022-06-06
+Bandit,Dog,Rottweiler,Hold,2023-10-12
+Cooper,Dog,Husky,Adoptable,2024-01-07
+Zeus,Dog,Australian Shepherd,Adopted,2023-05-01
+Tigger,Cat,Abyssinian,Hold,2024-01-23
+Toby,Dog,Border Collie,Foster,2021-02-11
+Nala,Cat,Ragdoll,Pending,2024-03-22
+Bandit,Dog,Husky,Pending,2020-12-11
+Shadow,Dog,Jack Russell Terrier,Adopted,2022-04-26
+Nala,Cat,Domestic Shorthair,Foster,2022-09-25
+Salem,Cat,Ragdoll,Adopted,2023-09-25
+Shadow,Dog,Rottweiler,Hold,2020-02-06
+Shadow,Dog,Poodle,Adopted,2020-09-07
+Nala,Cat,Scottish Fold,Foster,2021-07-23
+Bear,Dog,Great Dane,Hold,2020-08-10
+Jasper,Cat,Persian,Pending,2021-04-20
+Simba,Cat,Ragdoll,Hold,2024-10-26
+Duke,Dog,Husky,Adoptable,2021-04-12
+Zeus,Dog,Great Dane,Pending,2023-03-17
+Bailey,Dog,Pug,Foster,2021-03-07
+Oliver,Cat,Domestic Shorthair,Adoptable,2024-08-24
+Shadow,Dog,German Shepherd,Hold,2022-03-17
+Luna,Cat,Siamese,Pending,2023-07-16
+Zeus,Dog,Dalmatian,Adopted,2022-08-31
+Bailey,Dog,Beagle,Hold,2021-11-18
+Bear,Dog,Corgi,Foster,2024-12-17
+Snowball,Cat,Bombay,Adoptable,2022-07-03
+Finn,Dog,Husky,Hold,2021-11-15
+Shadow,Dog,Doberman,Hold,2020-12-18
+Leo,Dog,Doberman,Adoptable,2024-02-07
+Misty,Cat,Maine Coon,Adoptable,2023-02-01
+Willow,Cat,Domestic Shorthair,Adopted,2020-09-17
+Leo,Dog,Great Dane,Adoptable,2022-04-22
+Tiger,Cat,Siamese,Foster,2024-05-16
+Mocha,Cat,Russian Blue,Pending,2023-05-31
+Misty,Cat,Bengal,Hold,2023-08-03
+Hazel,Cat,Tabby,Adoptable,2023-07-01
+Willow,Cat,Turkish Angora,Foster,2022-06-22
+Bella,Dog,Corgi,Pending,2022-08-10
+Chloe,Cat,Persian,Adoptable,2024-11-07
+Peanut,Cat,British Shorthair,Adopted,2020-08-19
+Oliver,Cat,Abyssinian,Adopted,2023-03-21
+Finn,Dog,Husky,Adoptable,2023-09-27
+Bailey,Dog,Shih Tzu,Foster,2020-01-13
+Oliver,Cat,Calico,Adoptable,2021-03-02
+Oscar,Dog,Shih Tzu,Pending,2021-06-16
+Midnight,Cat,Ragdoll,Pending,2023-10-16
+Oscar,Dog,Pit Bull,Pending,2020-10-25
+Ginger,Cat,Domestic Longhair,Adoptable,2022-12-23
+Luna,Cat,Abyssinian,Foster,2021-08-19
+Shadow,Dog,Great Dane,Hold,2020-10-28
+Salem,Cat,Savannah,Hold,2022-08-31
+Thor,Dog,Golden Retriever,Foster,2021-09-12
+Max,Dog,Doberman,Foster,2024-11-04
+Smokey,Cat,Turkish Angora,Adoptable,2020-04-13
+Max,Dog,Border Collie,Hold,2024-10-15
+Rocky,Dog,Pit Bull,Foster,2020-11-23
+Cooper,Dog,Pug,Pending,2020-03-22
+Charlie,Dog,Chihuahua,Pending,2022-08-30
+Willow,Cat,Norwegian Forest,Adopted,2020-07-16
+Buddy,Dog,Pit Bull,Adopted,2022-09-02
+Smokey,Cat,Abyssinian,Pending,2022-05-26
+Oscar,Dog,Shih Tzu,Pending,2023-05-12
+Duke,Dog,Australian Shepherd,Adopted,2020-12-11
+Nala,Cat,Bombay,Foster,2023-02-16
+Jasper,Cat,British Shorthair,Foster,2020-06-19
+Bruno,Dog,Jack Russell Terrier,Pending,2024-03-17
+Leo,Dog,Labrador Retriever,Adopted,2020-05-22
+Midnight,Cat,Abyssinian,Foster,2022-08-22
+Oliver,Cat,Persian,Foster,2023-06-19
+Jasper,Cat,Tabby,Hold,2024-10-06
+Toby,Dog,German Shepherd,Adopted,2020-11-14
+Bandit,Dog,Husky,Hold,2022-04-25
+Bandit,Dog,Pug,Foster,2020-04-18
+Bruno,Dog,Chihuahua,Foster,2020-05-13
+Duke,Dog,Corgi,Foster,2022-08-26
+Buddy,Dog,Jack Russell Terrier,Pending,2024-11-05
+Riley,Dog,Great Dane,Pending,2024-09-27
+Mocha,Cat,Turkish Angora,Hold,2024-08-20
+Mocha,Cat,Russian Blue,Hold,2022-06-16
+Harley,Dog,Rottweiler,Hold,2022-10-31
+Rusty,Dog,Bulldog,Adopted,2022-07-01
+Buddy,Dog,Border Collie,Adoptable,2024-05-21
+Snowball,Cat,Calico,Adoptable,2022-01-15
+Luna,Cat,Russian Blue,Adoptable,2021-08-08
+Charlie,Dog,Doberman,Adopted,2023-10-17
+Smokey,Cat,Russian Blue,Adopted,2024-02-25
+Jasper,Cat,Norwegian Forest,Hold,2022-12-15
+Oreo,Cat,Calico,Hold,2023-12-19
+Jasper,Cat,Tabby,Adopted,2023-04-13
+Harley,Dog,Australian Shepherd,Foster,2021-07-26
+Oliver,Cat,Turkish Angora,Foster,2021-04-08
+Jasper,Cat,Sphynx,Adopted,2020-06-21
+Nala,Cat,Ragdoll,Adopted,2021-09-08
+Finn,Dog,Pit Bull,Foster,2020-04-29
+Simba,Cat,Sphynx,Foster,2021-04-10
+Thor,Dog,Australian Shepherd,Foster,2022-02-17
+Jasper,Cat,Sphynx,Foster,2023-05-08
+Finn,Dog,Great Dane,Adoptable,2022-03-07
+Mittens,Cat,Domestic Longhair,Pending,2022-01-16
+Simba,Cat,Sphynx,Adopted,2023-02-10
+Rocky,Dog,Australian Shepherd,Adoptable,2022-06-15
+Midnight,Cat,Persian,Hold,2023-09-06
+Misty,Cat,Calico,Adoptable,2024-06-06
+Midnight,Cat,Russian Blue,Foster,2023-01-04
+Max,Dog,Doberman,Hold,2020-11-28
+Duke,Dog,Dalmatian,Adopted,2020-10-19
+Misty,Cat,Calico,Foster,2023-09-13
+Buddy,Dog,Australian Shepherd,Foster,2023-04-02
+Bandit,Dog,Great Dane,Hold,2024-02-20
+Chloe,Cat,Siamese,Adoptable,2022-09-13
+Rusty,Dog,Dalmatian,Foster,2023-11-26
+Zeus,Dog,Dalmatian,Hold,2021-09-26
+Tigger,Cat,Domestic Shorthair,Hold,2022-01-03
+Milo,Dog,Pug,Adopted,2021-07-28
+Smokey,Cat,Norwegian Forest,Foster,2021-12-17
+Oreo,Cat,Tabby,Adopted,2024-01-08
+Chloe,Cat,Calico,Adopted,2024-04-02
+Cooper,Dog,Boxer,Hold,2023-01-18
+Mocha,Cat,Siamese,Adoptable,2023-08-27
+Bailey,Dog,Shih Tzu,Pending,2024-03-10
+Midnight,Cat,Russian Blue,Adoptable,2024-08-31
+Thor,Dog,Golden Retriever,Foster,2021-05-05
+Riley,Dog,Doberman,Foster,2024-08-04
+Tigger,Cat,Russian Blue,Pending,2022-08-06
+Mocha,Cat,Siamese,Adopted,2020-04-21
+Pumpkin,Cat,Abyssinian,Foster,2021-07-02
+Pumpkin,Cat,Siamese,Hold,2021-01-08
+Mittens,Cat,Birman,Pending,2023-06-08
+Midnight,Cat,Maine Coon,Pending,2020-04-22
+Pumpkin,Cat,Calico,Pending,2020-12-20
+Bear,Dog,Labrador Retriever,Foster,2021-12-22
+Mochi,Cat,Scottish Fold,Adopted,2022-06-26
+Loki,Dog,Husky,Pending,2023-05-24
+Bruno,Dog,Rottweiler,Adoptable,2021-07-01
+Tiger,Cat,British Shorthair,Adopted,2023-05-31
+Diesel,Dog,Rottweiler,Hold,2022-03-29
+Harley,Dog,Dalmatian,Adoptable,2023-01-26
+Riley,Dog,Border Collie,Adoptable,2024-06-05
+Tigger,Cat,Ragdoll,Hold,2021-07-08
+Charlie,Dog,Corgi,Hold,2023-12-18
+Buddy,Dog,Pit Bull,Adoptable,2021-12-22
+Buddy,Dog,Golden Retriever,Foster,2022-08-11
+Jasper,Cat,Domestic Shorthair,Adoptable,2023-10-17
+Salem,Cat,Russian Blue,Pending,2023-12-24
+Leo,Dog,Border Collie,Adopted,2024-02-19
+Mochi,Cat,Siamese,Pending,2022-09-11
+Tiger,Cat,Birman,Foster,2022-02-17
+Mittens,Cat,Turkish Angora,Adoptable,2024-07-23
+Ginger,Cat,Abyssinian,Hold,2023-09-26
+Cleo,Cat,Ragdoll,Pending,2020-10-01
+Cooper,Dog,Rottweiler,Hold,2023-07-04
+Tigger,Cat,Tabby,Hold,2021-03-25
+Bailey,Dog,Husky,Foster,2023-01-23
+Mittens,Cat,Domestic Longhair,Pending,2024-09-05
+Leo,Dog,Border Collie,Pending,2024-07-17
+Peanut,Cat,Bombay,Adopted,2021-06-12
+Snowball,Cat,Turkish Angora,Adoptable,2021-05-16
+Finn,Dog,Pit Bull,Hold,2021-09-26
+Rocky,Dog,Jack Russell Terrier,Foster,2021-09-08
+Harley,Dog,Pug,Hold,2024-10-17
+Bella,Dog,Pit Bull,Foster,2021-02-24
+Toby,Dog,Chihuahua,Hold,2020-12-05
+Diesel,Dog,Pit Bull,Hold,2024-02-10
+Harley,Dog,Rottweiler,Adoptable,2021-09-17
+Loki,Dog,Beagle,Foster,2020-08-12
+Leo,Dog,Pug,Pending,2024-11-20
+Harley,Dog,Bulldog,Adopted,2023-03-05
+Luna,Cat,Domestic Shorthair,Adopted,2021-07-06
+Mocha,Cat,Norwegian Forest,Hold,2023-08-28
+Oliver,Cat,Domestic Shorthair,Pending,2023-08-17
+Mochi,Cat,Norwegian Forest,Pending,2020-02-04
+Simba,Cat,Savannah,Pending,2023-06-08
+Oliver,Cat,Domestic Shorthair,Pending,2023-06-12
+Oreo,Cat,Norwegian Forest,Foster,2022-12-22
+Hazel,Cat,Norwegian Forest,Pending,2021-10-24
+Finn,Dog,Rottweiler,Adopted,2024-09-21
+Cleo,Cat,Calico,Foster,2024-12-19
+Max,Dog,Poodle,Hold,2020-05-05
+Oscar,Dog,German Shepherd,Foster,2024-06-04
+Oreo,Cat,Turkish Angora,Adoptable,2023-05-22
+Bruno,Dog,Border Collie,Foster,2024-08-25
+Cleo,Cat,Domestic Shorthair,Adoptable,2021-09-05
+Harley,Dog,Great Dane,Hold,2024-12-01
+Thor,Dog,Corgi,Adoptable,2024-02-11
+Tiger,Cat,Bombay,Adopted,2020-12-03
+Smokey,Cat,Calico,Foster,2020-11-07
+Bear,Dog,Rottweiler,Pending,2024-08-08
+Buddy,Dog,Rottweiler,Adoptable,2023-05-09
+Tigger,Cat,Domestic Shorthair,Adopted,2024-06-30
+Harley,Dog,German Shepherd,Pending,2023-12-28
+Misty,Cat,Persian,Hold,2022-06-28
+Mittens,Cat,Maine Coon,Adopted,2024-05-01
+Willow,Cat,Birman,Hold,2023-02-02
+Oliver,Cat,Sphynx,Pending,2020-11-22
+Hazel,Cat,Maine Coon,Hold,2023-01-03
+Bruno,Dog,Australian Shepherd,Foster,2021-05-12
+Rusty,Dog,Poodle,Foster,2022-07-27
+Cooper,Dog,Corgi,Adopted,2021-02-25
+Oreo,Cat,Bengal,Pending,2020-07-11
+Thor,Dog,Australian Shepherd,Adoptable,2022-09-14
+Snowball,Cat,Maine Coon,Adopted,2022-10-19
+Bruno,Dog,Shih Tzu,Hold,2021-02-25
+Bella,Dog,Beagle,Adopted,2024-10-14
+Cleo,Cat,Scottish Fold,Adopted,2024-07-31
+Simba,Cat,Scottish Fold,Hold,2023-03-10
+Riley,Dog,Jack Russell Terrier,Hold,2023-03-16
+Peanut,Cat,Turkish Angora,Pending,2021-12-22
+Midnight,Cat,Scottish Fold,Foster,2020-09-06
+Duke,Dog,German Shepherd,Foster,2022-08-11
+Luna,Cat,Savannah,Foster,2022-07-11
+Shadow,Dog,Dalmatian,Adoptable,2022-02-03
+Midnight,Cat,Birman,Adoptable,2020-01-15
+Willow,Cat,Scottish Fold,Pending,2023-05-01
+Shadow,Dog,Husky,Adoptable,2024-06-24
+Toby,Dog,Australian Shepherd,Adoptable,2024-09-22
+Cleo,Cat,Russian Blue,Adopted,2022-10-24
+Oscar,Dog,Doberman,Hold,2022-07-18
+Willow,Cat,Bombay,Adoptable,2020-01-07
+Nala,Cat,British Shorthair,Foster,2022-06-14
+Chloe,Cat,Scottish Fold,Adoptable,2023-05-29
+Midnight,Cat,Domestic Longhair,Adoptable,2024-01-25
+Max,Dog,Bulldog,Hold,2022-09-01
+Rusty,Dog,Chihuahua,Foster,2020-12-10
+Toby,Dog,German Shepherd,Pending,2024-01-28
+Mochi,Cat,Turkish Angora,Foster,2023-02-05
+Willow,Cat,Persian,Foster,2022-09-11
+Smokey,Cat,Domestic Shorthair,Hold,2023-05-03
+Midnight,Cat,Persian,Adopted,2020-07-15
+Nala,Cat,Turkish Angora,Adoptable,2023-01-07
+Diesel,Dog,Great Dane,Adoptable,2020-05-29
+Bailey,Dog,Corgi,Pending,2024-02-20
+Thor,Dog,Shih Tzu,Adoptable,2020-12-19
+Harley,Dog,Corgi,Hold,2024-04-19
+Duke,Dog,Doberman,Adoptable,2024-05-12
+Salem,Cat,Bombay,Foster,2022-04-18
+Mocha,Cat,British Shorthair,Foster,2022-11-11
+Bear,Dog,Great Dane,Pending,2024-05-02
+Salem,Cat,Domestic Shorthair,Adopted,2020-04-29
+Riley,Dog,Bulldog,Foster,2020-03-31
+Charlie,Dog,Rottweiler,Pending,2023-03-01
+Snowball,Cat,Ragdoll,Hold,2020-01-22
+Thor,Dog,Bulldog,Adopted,2020-12-16
+Leo,Dog,Corgi,Hold,2020-11-28
+Mittens,Cat,Turkish Angora,Adoptable,2022-08-04
+Bella,Dog,Chihuahua,Hold,2021-11-19
+Loki,Dog,Australian Shepherd,Hold,2023-11-05
+Tiger,Cat,Savannah,Adopted,2021-01-25
+Misty,Cat,Persian,Pending,2023-03-21
+Nala,Cat,Russian Blue,Pending,2024-10-07
+Diesel,Dog,Doberman,Foster,2021-05-31
+Bailey,Dog,Labrador Retriever,Adopted,2024-06-15
+Rusty,Dog,Dalmatian,Adoptable,2021-11-27
+Charlie,Dog,Border Collie,Foster,2024-11-17
+Shadow,Dog,Poodle,Adopted,2021-01-18
+Misty,Cat,Scottish Fold,Adoptable,2020-06-01
+Jasper,Cat,Ragdoll,Hold,2023-07-07
+Mittens,Cat,Siamese,Adopted,2023-08-18
+Oliver,Cat,Tabby,Adopted,2020-04-12
+Leo,Dog,Chihuahua,Pending,2022-08-04
+Salem,Cat,Calico,Foster,2021-11-09
+Riley,Dog,Shih Tzu,Adoptable,2024-05-13
+Charlie,Dog,Rottweiler,Adoptable,2022-11-15
+Thor,Dog,Pit Bull,Pending,2023-04-11
+Oliver,Cat,Persian,Foster,2024-08-16
+Willow,Cat,Domestic Longhair,Adoptable,2022-12-12
+Thor,Dog,Rottweiler,Pending,2023-02-10
+Milo,Dog,Corgi,Hold,2023-02-06
+Mocha,Cat,Domestic Shorthair,Adoptable,2022-08-12
+Bella,Dog,Doberman,Foster,2020-07-08
+Harley,Dog,Corgi,Foster,2021-07-25
+Zeus,Dog,Husky,Hold,2023-08-01
+Peanut,Cat,Ragdoll,Adopted,2023-02-16
+Duke,Dog,Pug,Hold,2021-10-11
+Cleo,Cat,Siamese,Hold,2020-02-16
+Zeus,Dog,Golden Retriever,Pending,2021-02-08
+Milo,Dog,Chihuahua,Adopted,2022-11-06
+Luna,Cat,Birman,Hold,2024-08-28
+Rusty,Dog,Corgi,Foster,2020-06-23
+Rocky,Dog,Pug,Hold,2020-03-23
+Midnight,Cat,Domestic Longhair,Adoptable,2023-10-30
+Toby,Dog,Australian Shepherd,Adopted,2022-12-17
+Pumpkin,Cat,Domestic Shorthair,Adoptable,2020-10-08
+Mocha,Cat,Bengal,Pending,2023-02-22
+Rocky,Dog,Husky,Pending,2020-04-06
+Snowball,Cat,Ragdoll,Pending,2021-01-10
+Bandit,Dog,Husky,Pending,2024-05-27
+Rocky,Dog,Dalmatian,Pending,2021-12-11
+Chloe,Cat,Siamese,Hold,2021-06-30
+Charlie,Dog,Golden Retriever,Hold,2022-12-14
+Bear,Dog,Great Dane,Adoptable,2022-03-02
+Harley,Dog,Jack Russell Terrier,Foster,2020-05-27
+Cleo,Cat,Birman,Adopted,2021-07-23
+Midnight,Cat,Turkish Angora,Adopted,2020-02-19
+Loki,Dog,Beagle,Adopted,2024-06-15
+Harley,Dog,Boxer,Pending,2020-04-27
+Rusty,Dog,Rottweiler,Hold,2022-02-04
+Pumpkin,Cat,Birman,Hold,2020-11-20
+Tigger,Cat,Persian,Adopted,2023-04-05
+Mochi,Cat,Ragdoll,Pending,2022-07-23
+Rusty,Dog,Pit Bull,Adoptable,2020-07-24
+Ginger,Cat,Persian,Foster,2024-08-21
+Toby,Dog,German Shepherd,Pending,2022-07-12
+Harley,Dog,Australian Shepherd,Foster,2024-05-03
+Rusty,Dog,Pit Bull,Adoptable,2021-12-01
+Charlie,Dog,Chihuahua,Pending,2023-03-14
+Buddy,Dog,Golden Retriever,Adopted,2022-01-08
+Charlie,Dog,Great Dane,Pending,2020-03-23
+Tigger,Cat,Domestic Longhair,Adopted,2024-09-29
+Misty,Cat,Turkish Angora,Pending,2022-10-15
+Bandit,Dog,Border Collie,Hold,2022-02-10
+Pumpkin,Cat,Bengal,Adopted,2022-07-17
+Finn,Dog,Australian Shepherd,Adoptable,2020-08-27
+Misty,Cat,Norwegian Forest,Foster,2023-02-25
+Ginger,Cat,Bengal,Adoptable,2020-12-22
+Zeus,Dog,German Shepherd,Adoptable,2024-03-01
+Diesel,Dog,German Shepherd,Pending,2021-01-30
+Diesel,Dog,German Shepherd,Adopted,2020-01-04
+Zeus,Dog,Dalmatian,Foster,2021-02-25
+Diesel,Dog,Jack Russell Terrier,Hold,2023-11-24
+Nala,Cat,Sphynx,Adoptable,2023-02-23
+Mocha,Cat,Maine Coon,Foster,2023-09-19
+Rocky,Dog,Rottweiler,Adopted,2021-10-19
+Bruno,Dog,Corgi,Pending,2022-03-12
+Bella,Dog,Boxer,Adoptable,2020-10-14
+Chloe,Cat,Domestic Shorthair,Foster,2021-05-07
+Max,Dog,Golden Retriever,Hold,2021-12-18
+Luna,Cat,Ragdoll,Foster,2022-04-26
+Toby,Dog,Shih Tzu,Foster,2022-05-16
+Luna,Cat,Norwegian Forest,Adopted,2023-10-26
+Zeus,Dog,Doberman,Foster,2023-09-25
+Rocky,Dog,Dalmatian,Adoptable,2022-07-01
+Smokey,Cat,Bengal,Adoptable,2024-07-06
+Simba,Cat,Turkish Angora,Foster,2023-11-24
+Riley,Dog,Labrador Retriever,Foster,2021-04-10
+Milo,Dog,Pit Bull,Foster,2023-02-28
+Mochi,Cat,Domestic Shorthair,Foster,2022-10-14
+Pumpkin,Cat,Siamese,Hold,2021-12-20
+Bruno,Dog,Husky,Pending,2021-07-07
+Midnight,Cat,Maine Coon,Adoptable,2021-11-05
+Duke,Dog,Pug,Adopted,2022-12-03
+Chloe,Cat,Ragdoll,Adoptable,2020-09-20
+Oreo,Cat,Persian,Hold,2022-07-16
+Bear,Dog,Border Collie,Pending,2022-11-25
+Buddy,Dog,Rottweiler,Adopted,2022-06-10
+Bella,Dog,Shih Tzu,Hold,2024-03-28
+Loki,Dog,Pit Bull,Foster,2023-06-02
+Shadow,Dog,Beagle,Adopted,2023-02-23
+Shadow,Dog,Labrador Retriever,Adopted,2024-07-16
+Max,Dog,Dalmatian,Foster,2022-08-11
+Peanut,Cat,Ragdoll,Adoptable,2022-05-26
+Midnight,Cat,Russian Blue,Pending,2020-05-27
+Toby,Dog,Great Dane,Hold,2024-03-02
+Tiger,Cat,Domestic Shorthair,Adoptable,2021-04-17
+Willow,Cat,Scottish Fold,Adoptable,2021-10-22
+Luna,Cat,Russian Blue,Foster,2024-11-27
+Peanut,Cat,Norwegian Forest,Foster,2023-09-06
+Riley,Dog,Labrador Retriever,Pending,2024-03-02
+Misty,Cat,Domestic Shorthair,Foster,2023-10-25
+Midnight,Cat,Savannah,Adopted,2022-11-23
+Misty,Cat,Domestic Shorthair,Adopted,2022-09-15
+Buddy,Dog,Dalmatian,Pending,2020-12-06
+Loki,Dog,Pit Bull,Adoptable,2021-04-25
+Nala,Cat,Siamese,Hold,2023-04-11
+Max,Dog,Labrador Retriever,Adopted,2022-05-08
+Nala,Cat,Persian,Foster,2020-08-09
+Bailey,Dog,Australian Shepherd,Pending,2021-08-31
+Toby,Dog,Australian Shepherd,Hold,2022-02-15
+Ginger,Cat,Calico,Adoptable,2022-04-13
+Max,Dog,Boxer,Adopted,2022-07-29
+Smokey,Cat,Ragdoll,Hold,2024-07-24
+Willow,Cat,Ragdoll,Adopted,2020-05-01
+Oscar,Dog,Great Dane,Pending,2022-12-13
+Midnight,Cat,Domestic Longhair,Pending,2021-11-26
+Shadow,Dog,Pit Bull,Adopted,2022-09-11
+Smokey,Cat,Persian,Adoptable,2021-11-07
+Loki,Dog,Border Collie,Hold,2020-12-04
+Smokey,Cat,Tabby,Hold,2022-11-15
+Luna,Cat,Domestic Longhair,Foster,2021-01-27
+Buddy,Dog,Husky,Adopted,2024-07-11
+Mochi,Cat,Siamese,Adoptable,2020-09-23
+Rusty,Dog,Shih Tzu,Foster,2020-04-13
+Snowball,Cat,Maine Coon,Pending,2022-01-07
+Duke,Dog,Pit Bull,Pending,2020-09-13
+Riley,Dog,Chihuahua,Adopted,2022-10-18
+Rocky,Dog,Beagle,Foster,2023-09-19
+Mocha,Cat,Norwegian Forest,Adoptable,2022-10-23
+Bandit,Dog,Border Collie,Foster,2024-12-05
+Mocha,Cat,Tabby,Adopted,2021-09-05
+Leo,Dog,Great Dane,Foster,2022-04-13
+Cooper,Dog,German Shepherd,Foster,2021-06-16
+Mochi,Cat,Tabby,Adoptable,2023-08-22
+Luna,Cat,Scottish Fold,Pending,2020-11-28
+Oliver,Cat,Siamese,Foster,2022-04-02
+Charlie,Dog,Jack Russell Terrier,Hold,2024-05-01
+Loki,Dog,Dalmatian,Foster,2021-10-06
+Cooper,Dog,Corgi,Hold,2021-06-26
+Mochi,Cat,Calico,Foster,2020-05-29
+Loki,Dog,Poodle,Pending,2021-09-24
+Zeus,Dog,Great Dane,Hold,2023-10-06
+Jasper,Cat,Bombay,Foster,2023-09-01
+Loki,Dog,German Shepherd,Adopted,2023-06-19
+Zeus,Dog,Corgi,Pending,2023-09-07
+Tigger,Cat,Domestic Longhair,Hold,2024-02-13
+Rocky,Dog,Doberman,Foster,2024-03-11
+Finn,Dog,Doberman,Hold,2021-04-23
+Loki,Dog,Pug,Hold,2023-06-12
+Salem,Cat,Domestic Longhair,Foster,2022-10-19
+Bear,Dog,Labrador Retriever,Foster,2021-12-13
+Pumpkin,Cat,British Shorthair,Adopted,2023-04-25
+Leo,Dog,Australian Shepherd,Pending,2020-04-29
+Charlie,Dog,Border Collie,Hold,2021-02-04
+Mittens,Cat,British Shorthair,Pending,2021-12-09
+Bella,Dog,Chihuahua,Hold,2023-01-31
+Pumpkin,Cat,Persian,Foster,2022-06-18
+Misty,Cat,Abyssinian,Adopted,2020-06-15
+Smokey,Cat,Ragdoll,Pending,2020-06-09
+Cooper,Dog,Bulldog,Hold,2024-07-22
+Oscar,Dog,Poodle,Adopted,2022-11-25
+Ginger,Cat,Abyssinian,Adopted,2021-07-12
+Toby,Dog,Pit Bull,Adoptable,2024-12-26
+Bella,Dog,Boxer,Adoptable,2020-09-19
+Bruno,Dog,Bulldog,Foster,2020-01-22
+Nala,Cat,Domestic Longhair,Adoptable,2024-10-15
+Riley,Dog,Husky,Pending,2020-05-03
+Pumpkin,Cat,Sphynx,Pending,2022-09-08
+Toby,Dog,Jack Russell Terrier,Hold,2022-04-08
+Pumpkin,Cat,Ragdoll,Pending,2022-12-25
+Diesel,Dog,Bulldog,Pending,2022-07-21
+Snowball,Cat,Birman,Hold,2022-01-20
+Simba,Cat,Scottish Fold,Pending,2021-01-30
+Ginger,Cat,Norwegian Forest,Adoptable,2022-12-20
+Mocha,Cat,Siamese,Hold,2020-04-23
+Peanut,Cat,Tabby,Adoptable,2020-10-24
+Riley,Dog,Jack Russell Terrier,Hold,2020-12-18
+Zeus,Dog,Boxer,Hold,2024-11-28
+Bear,Dog,Jack Russell Terrier,Pending,2020-05-31
+Oliver,Cat,Russian Blue,Pending,2023-04-01
+Buddy,Dog,Great Dane,Hold,2023-04-25
+Cleo,Cat,Bombay,Adoptable,2024-04-04
+Simba,Cat,Domestic Longhair,Pending,2023-07-02
+Rusty,Dog,Labrador Retriever,Hold,2023-01-03
+Bailey,Dog,Golden Retriever,Hold,2022-04-28
+Snowball,Cat,Domestic Longhair,Pending,2020-10-14
+Cooper,Dog,Shih Tzu,Hold,2023-05-18
+Bailey,Dog,Husky,Pending,2021-03-26
+Bear,Dog,Golden Retriever,Hold,2024-01-01
+Shadow,Dog,Jack Russell Terrier,Adopted,2020-06-01
+Chloe,Cat,Domestic Longhair,Hold,2021-07-07
+Zeus,Dog,Pit Bull,Pending,2021-11-17
+Milo,Dog,Pit Bull,Pending,2020-07-21
+Midnight,Cat,Scottish Fold,Foster,2020-03-09
+Bruno,Dog,Australian Shepherd,Adopted,2020-05-31
+Snowball,Cat,Maine Coon,Adopted,2023-05-02
+Willow,Cat,Tabby,Adoptable,2021-05-16
+Bandit,Dog,Great Dane,Pending,2023-09-13
+Thor,Dog,Pug,Foster,2023-08-03
+Zeus,Dog,Corgi,Adopted,2023-06-06
+Bear,Dog,Corgi,Adoptable,2023-08-23
+Midnight,Cat,Persian,Foster,2023-08-23
+Ginger,Cat,Persian,Pending,2021-09-01
+Loki,Dog,Bulldog,Adopted,2020-12-08
+Mittens,Cat,Domestic Shorthair,Adoptable,2020-12-01
+Chloe,Cat,Tabby,Foster,2024-05-22
+Misty,Cat,Tabby,Adoptable,2022-01-07
+Bailey,Dog,Husky,Pending,2023-10-18
+Toby,Dog,Golden Retriever,Adopted,2023-06-15
+Willow,Cat,Scottish Fold,Adoptable,2022-09-02
+Oscar,Dog,Boxer,Pending,2020-05-03
+Chloe,Cat,Ragdoll,Pending,2022-10-17
+Ginger,Cat,Bombay,Adoptable,2023-01-20
+Midnight,Cat,Sphynx,Hold,2023-02-28
+Charlie,Dog,Doberman,Foster,2020-09-03
+Cooper,Dog,Husky,Hold,2024-07-01
+Jasper,Cat,Domestic Longhair,Adopted,2020-06-15
+Jasper,Cat,Abyssinian,Adopted,2021-05-08
+Riley,Dog,Corgi,Adopted,2023-08-24
+Toby,Dog,Beagle,Adopted,2024-10-29
+Chloe,Cat,Ragdoll,Foster,2021-03-19
+Salem,Cat,Maine Coon,Adoptable,2021-11-15
+Jasper,Cat,Persian,Adoptable,2024-09-04
+Midnight,Cat,Birman,Foster,2024-02-29
+Cleo,Cat,Turkish Angora,Adopted,2022-06-25
+Salem,Cat,Norwegian Forest,Adoptable,2022-12-05
+Oliver,Cat,Turkish Angora,Adopted,2020-10-07
+Cleo,Cat,Russian Blue,Pending,2020-05-18
+Toby,Dog,Poodle,Adopted,2022-03-20
+Bailey,Dog,Dalmatian,Foster,2021-03-31
+Pumpkin,Cat,Sphynx,Adoptable,2021-11-08
+Finn,Dog,Dalmatian,Adoptable,2021-03-26
+Bandit,Dog,Jack Russell Terrier,Adopted,2024-06-24
+Bear,Dog,Labrador Retriever,Hold,2024-05-25
+Duke,Dog,Labrador Retriever,Adopted,2020-11-21
+Leo,Dog,Bulldog,Adoptable,2023-12-24
+Jasper,Cat,Persian,Pending,2021-09-09
+Ginger,Cat,Calico,Foster,2020-08-09
+Oliver,Cat,Calico,Pending,2023-01-06
+Oreo,Cat,Ragdoll,Adoptable,2023-05-31
+Oliver,Cat,British Shorthair,Foster,2023-05-22
+Finn,Dog,Husky,Foster,2022-04-23
+Duke,Dog,Dalmatian,Adopted,2022-09-28
+Snowball,Cat,Russian Blue,Foster,2021-02-26
+Max,Dog,Rottweiler,Hold,2020-10-04
+Oliver,Cat,Savannah,Adoptable,2020-03-12
+Oreo,Cat,Abyssinian,Pending,2024-12-19
+Tigger,Cat,Birman,Adopted,2024-09-24
+Leo,Dog,Chihuahua,Pending,2021-01-12
+Tigger,Cat,Norwegian Forest,Hold,2024-11-09
+Misty,Cat,Norwegian Forest,Pending,2024-09-01
+Salem,Cat,Abyssinian,Adoptable,2021-05-22
+Shadow,Dog,Shih Tzu,Adopted,2023-09-22
+Tiger,Cat,Savannah,Hold,2021-08-18
+Loki,Dog,German Shepherd,Adoptable,2023-02-25
+Thor,Dog,German Shepherd,Adopted,2024-02-21
+Mochi,Cat,Persian,Pending,2023-03-17
+Cooper,Dog,German Shepherd,Pending,2021-10-30
+Max,Dog,Shih Tzu,Adoptable,2024-08-04
+Riley,Dog,Australian Shepherd,Adoptable,2023-07-18
+Mocha,Cat,Norwegian Forest,Foster,2023-03-13
+Shadow,Dog,Corgi,Adopted,2020-06-19
+Smokey,Cat,Tabby,Foster,2021-06-21
+Tiger,Cat,Calico,Adoptable,2024-03-23
+Cleo,Cat,Russian Blue,Adoptable,2023-03-07
+Loki,Dog,Pug,Adoptable,2023-06-14
+Willow,Cat,Savannah,Adoptable,2022-09-23
+Mochi,Cat,Savannah,Foster,2020-04-18
+Mochi,Cat,Maine Coon,Hold,2022-11-18
+Tigger,Cat,Savannah,Pending,2021-02-08
+Jasper,Cat,Siamese,Hold,2020-04-21
+Leo,Dog,Golden Retriever,Foster,2022-06-08
+Finn,Dog,Pug,Pending,2022-09-07
+Max,Dog,Pug,Hold,2024-03-02
+Nala,Cat,Tabby,Hold,2022-11-12
+Diesel,Dog,Corgi,Hold,2022-08-14
+Bandit,Dog,Doberman,Pending,2024-06-11
+Oliver,Cat,Scottish Fold,Foster,2021-01-20
+Pumpkin,Cat,Abyssinian,Foster,2023-03-23
+Salem,Cat,Siamese,Pending,2024-02-07
+Misty,Cat,Bengal,Adoptable,2020-01-27
+Nala,Cat,Sphynx,Adoptable,2023-06-23
+Simba,Cat,Turkish Angora,Hold,2020-09-09
+Mochi,Cat,Calico,Hold,2021-08-12
+Tiger,Cat,Russian Blue,Adoptable,2020-08-06
+Mittens,Cat,Ragdoll,Foster,2023-06-10
+Mochi,Cat,Maine Coon,Foster,2023-02-10
+Rocky,Dog,Labrador Retriever,Adopted,2020-02-25
+Loki,Dog,Poodle,Adopted,2023-08-11
+Bella,Dog,Australian Shepherd,Hold,2020-04-13
+Tiger,Cat,Maine Coon,Pending,2023-01-30
+Bruno,Dog,Husky,Pending,2020-07-09
+Oscar,Dog,Bulldog,Pending,2023-10-02
+Ginger,Cat,Norwegian Forest,Hold,2024-10-17
+Milo,Dog,Bulldog,Foster,2023-01-29
+Oscar,Dog,Chihuahua,Adoptable,2023-08-18
+Harley,Dog,Doberman,Adopted,2022-04-12
+Bella,Dog,Labrador Retriever,Adopted,2022-04-04
+Max,Dog,Jack Russell Terrier,Pending,2021-06-24
+Peanut,Cat,Norwegian Forest,Foster,2024-04-17
+Finn,Dog,Doberman,Pending,2020-10-03
+Riley,Dog,Border Collie,Hold,2021-04-09
+Smokey,Cat,Bengal,Adopted,2024-09-21
+Toby,Dog,Bulldog,Pending,2023-10-24
+Bruno,Dog,Pug,Foster,2022-07-31
+Duke,Dog,Australian Shepherd,Foster,2024-04-15
+Cooper,Dog,Golden Retriever,Pending,2021-01-22
+Duke,Dog,Great Dane,Pending,2020-04-22
+Peanut,Cat,Calico,Foster,2022-08-26
+Midnight,Cat,Norwegian Forest,Hold,2024-09-28
+Willow,Cat,Siamese,Adoptable,2024-12-18
+Diesel,Dog,Pit Bull,Adoptable,2022-03-27
+Bailey,Dog,Corgi,Hold,2022-02-06
+Misty,Cat,Scottish Fold,Hold,2023-10-04
+Cleo,Cat,Bombay,Pending,2024-06-28
+Oscar,Dog,Beagle,Hold,2020-05-16
+Bandit,Dog,Border Collie,Adoptable,2024-07-13
+Zeus,Dog,Australian Shepherd,Hold,2024-11-06
+Harley,Dog,Labrador Retriever,Foster,2021-03-29
+Harley,Dog,Great Dane,Hold,2020-08-09
+Peanut,Cat,Persian,Hold,2021-02-05
+Bruno,Dog,Australian Shepherd,Hold,2023-01-22
+Ginger,Cat,Domestic Shorthair,Adopted,2021-11-03
+Bailey,Dog,Corgi,Adopted,2021-05-11
+Ginger,Cat,Turkish Angora,Adopted,2022-03-11
+Milo,Dog,Dalmatian,Pending,2024-08-24
+Peanut,Cat,Bombay,Pending,2020-01-01
+Buddy,Dog,Border Collie,Adoptable,2024-07-29
+Cooper,Dog,Bulldog,Hold,2022-04-14
+Nala,Cat,Persian,Adopted,2024-08-28
+Nala,Cat,Scottish Fold,Pending,2024-05-22
+Snowball,Cat,Maine Coon,Hold,2020-08-30
+Tiger,Cat,Maine Coon,Adoptable,2020-11-15
+Bailey,Dog,Labrador Retriever,Adopted,2021-08-08
+Mittens,Cat,British Shorthair,Adopted,2024-04-09
+Misty,Cat,Siamese,Adoptable,2022-04-23
+Tigger,Cat,Ragdoll,Pending,2020-07-21
+Pumpkin,Cat,Bombay,Foster,2023-07-27
+Oscar,Dog,Dalmatian,Adopted,2024-07-05
+Oliver,Cat,Siamese,Adopted,2024-05-28
+Peanut,Cat,Ragdoll,Adoptable,2020-08-27
+Midnight,Cat,Birman,Adopted,2020-10-28
+Thor,Dog,Corgi,Adoptable,2023-12-10
+Cooper,Dog,Great Dane,Hold,2020-04-14

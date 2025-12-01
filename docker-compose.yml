@@ -30,6 +30,9 @@ services:
       - postgres_data:/var/lib/postgresql/data
       - ./db/create_tables.sql:/docker-entrypoint-initdb.d/create_tables.sql
       - ./db/seed_data.sql:/docker-entrypoint-initdb.d/seed_data.sql
+      - ./db/animals_seed.csv:/docker-entrypoint-initdb.d/animals_seed.csv
+      - ./db/medical_records_seed.csv:/docker-entrypoint-initdb.d/medical_records_seed.csv
+      - ./db/intake_records_seed.csv:/docker-entrypoint-initdb.d/intake_records_seed.csv
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
