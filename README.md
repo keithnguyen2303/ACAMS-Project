@@ -2,6 +2,38 @@
 
 ACAMS is a full-stack web application for managing animals, users, and adoption requests in a shelter environment. It supports separate roles for **Adopters** and **Staff**, with role-based access control across the system.
 
+## Screenshots
+
+### Authentication
+
+| Login | Sign Up |
+|---|---|
+| <img width="430" alt="ACAMS login page" src="docs/screenshots/login.png" /> | <img width="430" alt="ACAMS sign-up page" src="docs/screenshots/signup.png" /> |
+
+### Staff Dashboard
+
+| Adoption Requests | Request Status Workflow |
+|---|---|
+| <img width="430" alt="Staff dashboard for managing adoption requests" src="docs/screenshots/staff-adoption-requests.png" /> | <img width="430" alt="Staff workflow for updating adoption request statuses" src="docs/screenshots/staff-request-status-workflow.png" /> |
+
+| Users | Animals |
+|---|---|
+| <img width="430" alt="Staff dashboard for managing users" src="docs/screenshots/staff-users.png" /> | <img width="430" alt="Staff dashboard for managing animals" src="docs/screenshots/staff-animals.png" /> |
+
+| Medical Records | Intake Records |
+|---|---|
+| <img width="430" alt="Animal medical records" src="docs/screenshots/animal-medical-records.png" /> | <img width="430" alt="Animal intake records" src="docs/screenshots/animal-intake-records.png" /> |
+
+### Adopter Dashboard
+
+| Browse Animals | Submitted Requests |
+|---|---|
+| <img width="430" alt="Adopter dashboard for browsing adoptable animals" src="docs/screenshots/adopter-browse-animals.png" /> | <img width="430" alt="Adopter dashboard showing submitted requests" src="docs/screenshots/adopter-submitted-requests.png" /> |
+
+| Request Statuses |
+|---|
+| <img width="860" alt="Adopter dashboard showing submitted, rejected, and approved request statuses" src="docs/screenshots/adopter-request-statuses.png" /> |
+
 ## Project Structure
 
 ```
